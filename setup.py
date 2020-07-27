@@ -4,7 +4,7 @@ import setuptools
 
 setuptools.setup(
 
-    name="test-subtree-project",
+    name="test-subtree-proj",
 
     version="0.0.1",
 
