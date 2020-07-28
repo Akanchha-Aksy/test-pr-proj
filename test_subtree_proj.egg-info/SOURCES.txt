@@ -1,0 +1,7 @@
+setup.py
+test_subtree_proj.egg-info/PKG-INFO
+test_subtree_proj.egg-info/SOURCES.txt
+test_subtree_proj.egg-info/dependency_links.txt
+test_subtree_proj.egg-info/top_level.txt
+tests/__init__.py
+tests/test_movies.py
