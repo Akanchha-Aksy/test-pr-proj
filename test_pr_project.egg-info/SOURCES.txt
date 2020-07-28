@@ -1,4 +1,11 @@
 setup.py
+test_module/__init__.py
+test_module/my_favourites.py
+test_module/setup.py
+test_module/test_calculate.py
+test_module/test_me.py
+test_module/tests/__init__.py
+test_module/tests/test_movies.py
 test_pr_project.egg-info/PKG-INFO
 test_pr_project.egg-info/SOURCES.txt
 test_pr_project.egg-info/dependency_links.txt
