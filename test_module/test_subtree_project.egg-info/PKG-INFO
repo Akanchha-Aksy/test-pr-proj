@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: test-subtree-project
+Version: 0.0.1
+Summary: A small example package
+Home-page: https://git.labs.nuance.com/akanchha.agupta/test-subtree-proj.git
+Author: Example Author
+Author-email: author@example.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.0
