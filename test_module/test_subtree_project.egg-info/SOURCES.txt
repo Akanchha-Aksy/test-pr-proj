@@ -1,5 +1,0 @@
-setup.py
-test_subtree_project.egg-info/PKG-INFO
-test_subtree_project.egg-info/SOURCES.txt
-test_subtree_project.egg-info/dependency_links.txt
-test_subtree_project.egg-info/top_level.txt
