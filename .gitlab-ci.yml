@@ -1,0 +1,11 @@
+stages:
+    - test
+
+test:pr:
+    tags: 
+        - ui_test
+    stage: test
+    before_script:
+        - pip install -e git+https://${AUTH_USER}:${REPO_ACCESS_TOKEN}@git@git.labs.nuance.com:akanchha.agupta/test-pr-proj.git#egg=test-subtree-proj
+    script:
+        - python test_me.py
