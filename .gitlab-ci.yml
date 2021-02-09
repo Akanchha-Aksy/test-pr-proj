@@ -1,9 +1,10 @@
 stages:
     - test
+    - trigger_api
 
 test-pr:
     tags: 
-        - ui_test
+        - multipipeline_trigger
     when: always
     stage: test
     before_script:
@@ -12,7 +13,9 @@ test-pr:
         - python test_me.py
         
 bridge-job:
-    stage: test
+    stage: trigger_api
+    tags:
+        - multipipeline_trigger
     script:
     - "curl --request POST --form token=41d3d3a0b0b0aacd5653f81815528e --form ref=master https://gitlab.example.com/api/v4/projects/15966/trigger/pipeline"
     
