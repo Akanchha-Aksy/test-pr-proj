@@ -18,5 +18,5 @@ bridge-job:
     tags:
         - li-run
     script:
-    - "curl --request POST --form token=41d3d3a0b0b0aacd5653f81815528e --form ref=master https://gitlab.example.com/api/v4/projects/15966/trigger/pipeline"
+    - "curl --request POST --form token=41d3d3a0b0b0aacd5653f81815528e --form ref=master https://git.labs.nuance.com/api/v4/projects/15966/trigger/pipeline"
     
