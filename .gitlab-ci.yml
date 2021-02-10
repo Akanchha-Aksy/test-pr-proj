@@ -4,18 +4,19 @@ stages:
 
 test-pr:
     tags: 
-        - multipipeline_trigger
+        - li-run
     when: always
     stage: test
     before_script:
-        - pip install -e git+https://${AUTH_USER}:${REPO_ACCESS_TOKEN}@git@git.labs.nuance.com:akanchha.agupta/test-pr-proj.git#egg=test-subtree-proj
+        #- pip install -e git+https://${AUTH_USER}:${REPO_ACCESS_TOKEN}@git@git.labs.nuance.com:akanchha.agupta/test-pr-proj.git#egg=test-subtree-proj
     script:
-        - python test_me.py
+        #- python test_me.py
+        echo "Running tests"
         
 bridge-job:
     stage: trigger_api
     tags:
-        - multipipeline_trigger
+        - li-run
     script:
     - "curl --request POST --form token=41d3d3a0b0b0aacd5653f81815528e --form ref=master https://gitlab.example.com/api/v4/projects/15966/trigger/pipeline"
     
