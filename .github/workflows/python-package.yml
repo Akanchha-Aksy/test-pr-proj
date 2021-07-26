@@ -40,6 +40,6 @@ jobs:
         python hello_world.py
     - name: Container image
       run: |
-        echo $CR_PAT | docker login ghcr.io -u Akanchha-Aksy --password-stdin
+        echo $CR_PAT | docker login ghcr.io -u Akanchha-Aksy -p LE6rg5tVaVZ4ZLb 
         env:
           CR_PAT: ${{ secrets.CR_PAT }}
